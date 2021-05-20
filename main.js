@@ -43,9 +43,11 @@ form.addEventListener("submit", (e) => {
       .then((data) => {
         console.log(data);
         main.innerHTML = "";
-        ui.showMovies(data, searchTerm);
+        const searchResult = ui.showMovies(data, searchTerm);
+        main.appendChild(searchResult);
       })
       .catch((err) => alert("error!"));
+
     search.value = "";
   } else {
     window.location.reload();
