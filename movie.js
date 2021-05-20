@@ -28,14 +28,3 @@ class Movie {
     }
   }
 }
-
-// const API_URL = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=275d762c21f3a57f54f0001eefef97ab&page=1";
-
-// daily trending
-// https://api.themoviedb.org/3/trending/movie/day?api_key=<<api_key>>&page=1
-
-// best movies in 2021
-// https://api.themoviedb.org/3/discover/movie?primary_release_year=2021&sort_by=vote_average.desc&api_key=<<>>&page=1
-
-// top rated on TMDB
-// https://api.themoviedb.org/3/movie/top_rated?api_key=275d762c21f3a57f54f0001eefef97ab&page=1

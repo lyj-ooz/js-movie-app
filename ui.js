@@ -24,8 +24,6 @@ class UI {
     const moviesDiv = document.createElement("div");
     moviesDiv.classList.add("movies");
 
-    console.log(data.length);
-
     data.forEach((d) => {
       const movie = document.createElement("div");
       movie.className = "movie";
