@@ -10,13 +10,13 @@ class UI {
     const heading = document.createElement("h2");
     section.className = "search-results";
 
-    heading.innerText = `Search results for '${search}'`;
+    heading.innerText = `'${search}' 에 대한 검색 결과`;
     section.appendChild(heading);
 
     if (data.length === 0) {
       const noResultDiv = document.createElement("div");
       noResultDiv.classList.add("no-result");
-      noResultDiv.innerText = `Can't find movies for '${search}'`;
+      noResultDiv.innerText = `'${search}'와 관련된 영화를 찾을 수 없습니다.`;
       section.appendChild(noResultDiv);
       return section;
     }
